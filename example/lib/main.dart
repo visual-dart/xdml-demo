@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:xdml/metadata.dart';
-import 'package:demo/demo.dart';
 import 'package:flutter/material.dart';
 import 'main.binding.dart';
 
@@ -29,7 +28,7 @@ class MyAppState extends State<MyApp> {
   Future<void> initPlatformState() async {
     String platformVersion;
     try {
-      platformVersion = await Demo.platformVersion;
+      platformVersion = "TEST";
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

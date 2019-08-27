@@ -18,9 +18,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  demo:
-    path: ../src/plugins/demo
-
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
