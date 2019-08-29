@@ -13,7 +13,7 @@
     </x:ReferenceGroup>
 
     <!-- PartialVuiew -->
-    <x:ViewUnit ref="appBarTpl">
+    <x:ViewUnit x:ref="appBarTpl">
         <AppBar>
             <Text x:slot="title">{{
                 'Welcome to Flutter'
@@ -24,12 +24,12 @@
         </AppBar>
     </x:ViewUnit>
 
-    <x:ViewUnit ref="fuckYou">fuck you !</x:ViewUnit>
+    <x:ViewUnit x:ref="fuckYou">fuck you !</x:ViewUnit>
     <!-- ViewBuilder -->
     <x:ViewBuilder
-            ref="itemFn"
-            params="context, int index"
-            vars="ctx = context; ctxStr = context.toString()">
+            x:ref="itemFn"
+            x:params="context, int index"
+            x:vars="ctx = context; ctxStr = context.toString()">
         <x:Execution>print("woshinidie")</x:Execution>
         <x:Execution>print(ctx)</x:Execution>
         <x:Execution>print(ctxStr)</x:Execution>
@@ -56,9 +56,9 @@
                 <!-- Inner ViewBuilder -->
                 <x:ViewBuilder
                         x:slot="itemBuilder"
-                        param-context="BuildContext"
-                        param-index="int"
-                        var-ctx="666">
+                        x:param-context="BuildContext"
+                        x:param-index="int"
+                        x:var-ctx="666">
                     <x:Execution>print("woshinidie")</x:Execution>
                     <x:Execution>print(ctx)</x:Execution>
                     <Text x:if="index % 2 == 0">123456</Text>
@@ -74,8 +74,8 @@
                     mainAxisAlignment="{{ MainAxisAlignment.center }}">
                 <x:NodeList
                         x:slot="children"
-                        type="Widget">
-                    <x:Virtual._rule value="a is Map<dynamic, dynamic> && a.containsKey('b')" />
+                        x:type="Widget">
+                    <x:Virtual._rule x:value="a is Map<dynamic, dynamic> && a.containsKey('b')" />
                     <Text x:if="bind:virtual = _rule">{{ a['b'] + '2#232#' }}</Text>
                     <Text x:else-if="a == 55">yyyyyyyyyyyy</Text>
                     <Text x:else-if="a == 556">tttttttttttt</Text>

@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
   MyAppState createState() => MyAppState();
 }
 
-@Binding('main.xaml')
+@Binding('main.dart.xaml')
 class MyAppState extends State<MyApp> {
   String platformVersion = 'Unknown';
   final String titleText = 'Hello World';
