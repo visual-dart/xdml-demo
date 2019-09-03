@@ -1,0 +1,3 @@
+entry: lib
+group: com.your.example.demo
+watch: true
