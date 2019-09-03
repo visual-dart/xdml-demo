@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/services.dart';
-import 'package:xdml/metadata.dart';
 import 'package:flutter/material.dart';
+import 'package:puzzle/metadata.dart';
 import 'main.binding.dart';
 
 void main() => runApp(MyApp());
